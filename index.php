@@ -23,13 +23,13 @@ include "bgtoolbox/Toolbox.php";
             <div class="card mt-4">
                 <div class="card-body">
                     <h5 class="card-title">createStringWithFormat($string, $values)</h5>
-                    <p class="card-text">Result: <?=\bgtoolbox\Toolbox::createStringWithFormat("The {0} files you want to create are being processed. After the process is completed, it will be sent to {1}.", array("15", "john.doe@email.com"))?></p>
+                    <p class="card-text">Result: <?= \Toolbox::createStringWithFormat("There are {0} new members today and {1} yesterday.", array("15", "45"))?></p>
                 </div>
             </div>
             <div class="card mt-4">
                 <div class="card-body">
                     <h5 class="card-title">createSpecialVersion($startDate)</h5>
-                    <p class="card-text">Result: <?=\bgtoolbox\Toolbox::createSpecialVersion("2024-01-01")?></p>
+                    <p class="card-text">Result: <?= \Toolbox::createSpecialVersion("2024-01-01")?></p>
                 </div>
             </div>
         </div>

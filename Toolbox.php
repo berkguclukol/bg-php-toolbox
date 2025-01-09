@@ -1,9 +1,5 @@
 <?php
 
-namespace bgtoolbox;
-
-use DateTime;
-use Exception;
 
 class Toolbox
 {
@@ -11,6 +7,7 @@ class Toolbox
      * @param $string
      * @param $values
      * @return string
+     * @example createStringWithFormat("There are {0} new members today and {1} yesterday.", array("15", "45")) => There are 15 new members today and 45 yesterday.
      */
     static function createStringWithFormat($string, $values): string
     {
@@ -24,6 +21,7 @@ class Toolbox
      * @param $startDate
      * @return string
      * @throws Exception
+     * @example Toolbox::createSpecialVersion("2024-01-01") => v1.8
      */
     static function createSpecialVersion($startDate): string
     {
